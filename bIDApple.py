@@ -298,7 +298,6 @@ class BIDApplePlugin(ida_idaapi.plugin_t):
                 self.audio_proc = subprocess.Popen(cmd,
                                                    stdout=subprocess.DEVNULL,
                                                    stderr=subprocess.DEVNULL)
-                ida_kernwin.msg(f"[{PLUGIN_NAME}] playing audio: {song_path}\n")
             except FileNotFoundError:
                 ida_kernwin.msg(f"[{PLUGIN_NAME}] failed to launch player."
                                "We can't use QtMultimedia so ensure ffplay (for MP3) is installed.\n")
