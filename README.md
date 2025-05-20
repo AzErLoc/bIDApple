@@ -1,7 +1,7 @@
 # 🍎 bIDApple - Bad Apple in Your IDA Pro Navband 🎶
 
 > Ever looked at IDA’s navigation band and thought, “This needs *more Touhou*”?  
-> **IDApple** brings the iconic *Bad Apple!!* shadow art video right into IDA Pro — pixel-perfectly rendered in the navband.
+> **bIDApple** brings the iconic *Bad Apple!!* shadow art video right into IDA Pro's navband.
 
 ![bad-apple-gif](https://i.pinimg.com/originals/11/3c/37/113c37e46e35619ae54f555f1d7cc92e.gif)  
 *Yes, really. It plays in the navband.*
