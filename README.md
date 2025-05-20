@@ -41,7 +41,7 @@ git clone https://github.com/AzErLoc/bIDApple ~/.idapro/plugins/
 ---
 
 ## 📽️ Demo
-[![bIDApple : Bad Apple in IDA Pro's navband](https://img.youtube.com/vi/NsirMRKIwXE/0.jpg)](https://www.youtube.com/watch?v=NsirMRKIwXE)
+[![bIDApple : Bad Apple in IDA Pro's navband](https://github.com/user-attachments/assets/a9919ff9-4342-4a5d-9a87-f4c2171a7570)](https://www.youtube.com/watch?v=NsirMRKIwXE)
 
 ---
 
