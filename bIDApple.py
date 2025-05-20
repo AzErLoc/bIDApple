@@ -86,7 +86,6 @@ class NavbandAnimator(QtCore.QObject):
         self.painter = painter
         self.timer   = QtCore.QTimer(self)
         interval_ms = int(1000 / fps)
-        print(interval_ms)
         self.timer.setInterval(interval_ms)
         self.timer.timeout.connect(self._next_frame)
 
@@ -263,7 +262,6 @@ class BIDApplePlugin(ida_idaapi.plugin_t):
                 except Exception:
                     pass
                 self.audio_proc = None
-            ida_kernwin.msg(f"[{PLUGIN_NAME}] animation stopped.\n")
             return
 
         # Otherwise, prompt for a folder if not set
