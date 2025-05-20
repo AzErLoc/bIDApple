@@ -12,7 +12,7 @@
 ## 🤔 Why?
 
 Because reverse engineering is hard?  
-Because sometimes you need a break? 
+Because sometimes you need a break?  
 But mostly because *Bad Apple*.
 
 ---
