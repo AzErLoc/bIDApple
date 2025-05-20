@@ -3,7 +3,7 @@
 > Ever looked at IDA’s navigation band and thought, “This needs *more Touhou*”?  
 > **bIDApple** brings the iconic *Bad Apple!!* shadow art video right into IDA Pro's navband.
 
-![bad-apple-gif](https://i.pinimg.com/originals/11/3c/37/113c37e46e35619ae54f555f1d7cc92e.gif)  
+![Image](https://github.com/user-attachments/assets/f43762bd-cd07-4ed9-8ced-5391bf0f11f5)
 *Yes, really. It plays in the navband.*
 
 ---
@@ -41,3 +41,10 @@ git clone https://github.com/AzErLoc/bIDApple ~/.idapro/plugins/
 
 ## 📽️ Demo
 [![bIDApple : Bad Apple in IDA Pro's navband](https://img.youtube.com/vi/NsirMRKIwXE/0.jpg)](https://www.youtube.com/watch?v=NsirMRKIwXE)
+
+---
+
+## ❓What’s Next?
+
+Someone needs to play DOOM in IDA while reversing DOOM.
+
