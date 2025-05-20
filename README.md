@@ -4,6 +4,7 @@
 > **bIDApple** brings the iconic *Bad Apple!!* shadow art video right into IDA Pro's navband.
 
 ![Image](https://github.com/user-attachments/assets/f43762bd-cd07-4ed9-8ced-5391bf0f11f5)
+
 *Yes, really. It plays in the navband.*
 
 ---
