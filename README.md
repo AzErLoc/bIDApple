@@ -35,8 +35,8 @@ git clone https://github.com/AzErLoc/bIDApple ~/.idapro/plugins/
 ```
 2. Open IDA Pro.
 3. Right click in decompilation or disassembly view.
-4. Click the entry to start bIDApple Animation
-5. Make your navband bigger 😉
+4. Click the entry to start bIDApple Animation.
+5. Make your navband bigger 😉.
 
 ---
 
