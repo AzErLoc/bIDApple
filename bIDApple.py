@@ -218,8 +218,9 @@ class BIDApplePlugin(ida_idaapi.plugin_t):
         Called when IDA unloads the plugin. Stop animation, uninstall hook, unregister action.
         """
         # 1) Clear navband
-        self.animator.stop()
-        self.animator = None
+        if self.animator:
+            self.animator.stop()
+            self.animator = None
 
         # 2) Terminate any audio process
         if self.audio_proc:
