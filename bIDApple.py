@@ -1,10 +1,8 @@
 import os
 import subprocess
-from time import sleep
 import idaapi
 import ida_kernwin
 import ida_idaapi
-import ida_kernwin
 from PyQt5 import QtWidgets, QtCore, QtGui
 
 PLUGIN_NAME = "bIDApple"
@@ -108,6 +106,7 @@ class NavbandAnimator(QtCore.QObject):
         self.running = False
         self.timer.stop()
         self.painter.set_pixmap(None)
+        self.painter.uninstall()
 
     def _next_frame(self):
         """Advance index, attempt to load next frame, or stop if missing."""
@@ -118,7 +117,6 @@ class NavbandAnimator(QtCore.QObject):
         if not self._load_frame():
             # No such file -> end animation
             self.stop()
-            self.painter.uninstall()
 
     def _load_frame(self):
         """
@@ -219,8 +217,9 @@ class BIDApplePlugin(ida_idaapi.plugin_t):
         """
         Called when IDA unloads the plugin. Stop animation, uninstall hook, unregister action.
         """
-        # 1) Clear navband (stop animation + teardown painter)
-        self.clear_navband()
+        # 1) Clear navband
+        self.animator.stop()
+        self.animator = None
 
         # 2) Terminate any audio process
         if self.audio_proc:
@@ -238,16 +237,6 @@ class BIDApplePlugin(ida_idaapi.plugin_t):
         # 3) Unregister our action
         ida_kernwin.unregister_action(ACTION_NAME)
 
-    def clear_navband(self):
-        # 1) Stop any running animation
-        if self.animator:
-            self.animator.stop()
-            self.animator = None
-
-        # 2) Teardown the painter
-        if self.painter:
-            self.painter.uninstall()
-            self.painter = None
 
     def toggle_animation(self):
         """
@@ -255,7 +244,8 @@ class BIDApplePlugin(ida_idaapi.plugin_t):
         """
         # If already running, stop immediately
         if self.animator and self.animator.running:
-            self.clear_navband()
+            self.animator.stop()
+            self.animator = None
             if self.audio_proc:
                 try:
                     self.audio_proc.terminate()
