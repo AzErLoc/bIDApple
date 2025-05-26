@@ -31,7 +31,7 @@ Yes, it actually works.
 1. Clone this repo into your IDA plugins directory:
 
 ```bash
-git clone https://github.com/AzErLoc/bIDApple ~/.idapro/plugins/
+git clone https://github.com/AzErLoc/bIDApple ~/.idapro/plugins/bIDApple/
 ```
 2. Open IDA Pro.
 3. Right click in decompilation or disassembly view.

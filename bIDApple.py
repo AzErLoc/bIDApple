@@ -187,7 +187,7 @@ class BIDApplePlugin(ida_idaapi.plugin_t):
         self.animator   = None
         self.painter    = None
         self.audio_proc  = None
-        self.folder     = f"{idaapi.get_user_idadir()}/plugins/bIDApple"
+        self.folder     = f"{idaapi.get_user_idadir()}/plugins/bIDApple/bIDApple"
 
     def init(self):
         """
